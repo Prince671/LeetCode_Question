@@ -27,6 +27,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## String
 |  |
 | ------- |
+| [0796-rotate-string](https://github.com/Prince671/LeetCode_Question/tree/master/0796-rotate-string) |
 | [2390-removing-stars-from-a-string](https://github.com/Prince671/LeetCode_Question/tree/master/2390-removing-stars-from-a-string) |
 ## Stack
 |  |
@@ -36,4 +37,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [2390-removing-stars-from-a-string](https://github.com/Prince671/LeetCode_Question/tree/master/2390-removing-stars-from-a-string) |
+## String Matching
+|  |
+| ------- |
+| [0796-rotate-string](https://github.com/Prince671/LeetCode_Question/tree/master/0796-rotate-string) |
 <!---LeetCode Topics End-->
