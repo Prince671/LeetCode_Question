@@ -31,6 +31,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## String
 |  |
 | ------- |
+| [0242-valid-anagram](https://github.com/Prince671/LeetCode_Question/tree/master/0242-valid-anagram) |
 | [0709-to-lower-case](https://github.com/Prince671/LeetCode_Question/tree/master/0709-to-lower-case) |
 | [0796-rotate-string](https://github.com/Prince671/LeetCode_Question/tree/master/0796-rotate-string) |
 | [1047-remove-all-adjacent-duplicates-in-string](https://github.com/Prince671/LeetCode_Question/tree/master/1047-remove-all-adjacent-duplicates-in-string) |
@@ -60,9 +61,14 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Sorting
 |  |
 | ------- |
+| [0242-valid-anagram](https://github.com/Prince671/LeetCode_Question/tree/master/0242-valid-anagram) |
 | [1464-maximum-product-of-two-elements-in-an-array](https://github.com/Prince671/LeetCode_Question/tree/master/1464-maximum-product-of-two-elements-in-an-array) |
 ## Heap (Priority Queue)
 |  |
 | ------- |
 | [1464-maximum-product-of-two-elements-in-an-array](https://github.com/Prince671/LeetCode_Question/tree/master/1464-maximum-product-of-two-elements-in-an-array) |
+## Hash Table
+|  |
+| ------- |
+| [0242-valid-anagram](https://github.com/Prince671/LeetCode_Question/tree/master/0242-valid-anagram) |
 <!---LeetCode Topics End-->
