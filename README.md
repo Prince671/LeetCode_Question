@@ -11,6 +11,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1464-maximum-product-of-two-elements-in-an-array](https://github.com/Prince671/LeetCode_Question/tree/master/1464-maximum-product-of-two-elements-in-an-array) |
 | [1528-shuffle-string](https://github.com/Prince671/LeetCode_Question/tree/master/1528-shuffle-string) |
 | [1967-number-of-strings-that-appear-as-substrings-in-word](https://github.com/Prince671/LeetCode_Question/tree/master/1967-number-of-strings-that-appear-as-substrings-in-word) |
+| [3046-split-the-array](https://github.com/Prince671/LeetCode_Question/tree/master/3046-split-the-array) |
 ## Binary Search
 |  |
 | ------- |
@@ -73,4 +74,9 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0242-valid-anagram](https://github.com/Prince671/LeetCode_Question/tree/master/0242-valid-anagram) |
+| [3046-split-the-array](https://github.com/Prince671/LeetCode_Question/tree/master/3046-split-the-array) |
+## Counting
+|  |
+| ------- |
+| [3046-split-the-array](https://github.com/Prince671/LeetCode_Question/tree/master/3046-split-the-array) |
 <!---LeetCode Topics End-->
