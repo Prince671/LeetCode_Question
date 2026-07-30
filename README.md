@@ -6,6 +6,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0004-median-of-two-sorted-arrays](https://github.com/Prince671/LeetCode_Question/tree/master/0004-median-of-two-sorted-arrays) |
 | [0034-find-first-and-last-position-of-element-in-sorted-array](https://github.com/Prince671/LeetCode_Question/tree/master/0034-find-first-and-last-position-of-element-in-sorted-array) |
+| [0048-rotate-image](https://github.com/Prince671/LeetCode_Question/tree/master/0048-rotate-image) |
 | [0053-maximum-subarray](https://github.com/Prince671/LeetCode_Question/tree/master/0053-maximum-subarray) |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/Prince671/LeetCode_Question/tree/master/0121-best-time-to-buy-and-sell-stock) |
 | [0238-product-of-array-except-self](https://github.com/Prince671/LeetCode_Question/tree/master/0238-product-of-array-except-self) |
@@ -28,6 +29,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Math
 |  |
 | ------- |
+| [0048-rotate-image](https://github.com/Prince671/LeetCode_Question/tree/master/0048-rotate-image) |
 | [0633-sum-of-square-numbers](https://github.com/Prince671/LeetCode_Question/tree/master/0633-sum-of-square-numbers) |
 | [3014-minimum-number-of-pushes-to-type-word-i](https://github.com/Prince671/LeetCode_Question/tree/master/3014-minimum-number-of-pushes-to-type-word-i) |
 ## Two Pointers
@@ -95,4 +97,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [3014-minimum-number-of-pushes-to-type-word-i](https://github.com/Prince671/LeetCode_Question/tree/master/3014-minimum-number-of-pushes-to-type-word-i) |
+## Matrix
+|  |
+| ------- |
+| [0048-rotate-image](https://github.com/Prince671/LeetCode_Question/tree/master/0048-rotate-image) |
 <!---LeetCode Topics End-->
