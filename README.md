@@ -26,6 +26,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0004-median-of-two-sorted-arrays](https://github.com/Prince671/LeetCode_Question/tree/master/0004-median-of-two-sorted-arrays) |
 | [0053-maximum-subarray](https://github.com/Prince671/LeetCode_Question/tree/master/0053-maximum-subarray) |
+| [0148-sort-list](https://github.com/Prince671/LeetCode_Question/tree/master/0148-sort-list) |
 ## Math
 |  |
 | ------- |
@@ -35,6 +36,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Two Pointers
 |  |
 | ------- |
+| [0148-sort-list](https://github.com/Prince671/LeetCode_Question/tree/master/0148-sort-list) |
 | [0633-sum-of-square-numbers](https://github.com/Prince671/LeetCode_Question/tree/master/0633-sum-of-square-numbers) |
 ## String
 |  |
@@ -77,6 +79,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Sorting
 |  |
 | ------- |
+| [0148-sort-list](https://github.com/Prince671/LeetCode_Question/tree/master/0148-sort-list) |
 | [0242-valid-anagram](https://github.com/Prince671/LeetCode_Question/tree/master/0242-valid-anagram) |
 | [0442-find-all-duplicates-in-an-array](https://github.com/Prince671/LeetCode_Question/tree/master/0442-find-all-duplicates-in-an-array) |
 | [1464-maximum-product-of-two-elements-in-an-array](https://github.com/Prince671/LeetCode_Question/tree/master/1464-maximum-product-of-two-elements-in-an-array) |
@@ -106,4 +109,12 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0048-rotate-image](https://github.com/Prince671/LeetCode_Question/tree/master/0048-rotate-image) |
+## Linked List
+|  |
+| ------- |
+| [0148-sort-list](https://github.com/Prince671/LeetCode_Question/tree/master/0148-sort-list) |
+## Merge Sort
+|  |
+| ------- |
+| [0148-sort-list](https://github.com/Prince671/LeetCode_Question/tree/master/0148-sort-list) |
 <!---LeetCode Topics End-->
