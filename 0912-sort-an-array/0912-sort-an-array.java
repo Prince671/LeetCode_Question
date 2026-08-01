@@ -1,58 +1,42 @@
 class Solution {
-    static void merge(int[]nums,int s,int e,int mid){
-        int leftLen=mid-s+1;
-        int rightLen=e-mid;
-        int[]leftArr=new int[leftLen];
-        int[]rightArr=new int[rightLen];
-
-        int k=s;
-        for(int i=0;i<leftLen;i++){
-            leftArr[i]=nums[k];
-            k++;
-        }
-        k=mid+1;
-        for(int i=0;i<rightLen;i++){
-            rightArr[i]=nums[k];
-            k++;
+     public static void mergeSort(int[] nums, int lb, int ub){
+        // 2. Fix the base case to prevent infinite recursion
+        if (lb >= ub) {
+            return;
         }
         
-        int i=0;
-        int j=0;
-         k=s;
-        while(i<leftLen && j<rightLen){
-            if(leftArr[i]<rightArr[j]){
-                nums[k]=leftArr[i];
-                i++;
-                k++;
-            }else{
-                nums[k]=rightArr[j];
-                j++;
-                k++;
+        int mid = lb + (ub - lb) / 2;
+        mergeSort(nums, lb, mid);
+        mergeSort(nums, mid + 1, ub);
+        merge(nums, lb, mid, ub);
+    }
+
+    // 3. Added the missing merge function
+    public static void merge(int[] nums, int lb, int mid, int ub) {
+        int[] temp = new int[ub - lb + 1];
+        int i = lb;
+        int j = mid + 1;
+        int k = 0;
+
+        while (i <= mid && j <= ub) {
+            if (nums[i] <= nums[j]) {
+                temp[k++] = nums[i++];
+            } else {
+                temp[k++] = nums[j++];
             }
         }
 
-        while(i<leftLen){
-            nums[k]=leftArr[i];
-            i++;
-            k++;
+        while (i <= mid) {
+            temp[k++] = nums[i++];
         }
-        while(j<rightLen){
-            nums[k]=rightArr[j];
-            j++;
-            k++;
-        }
-    }
-    static void mergeSort(int[]nums,int l,int r){
-        int s=l;
-        int e=r;
-        if(s>=e){
-            return ;
-        }
-        int mid=(s+e)/2;
-        mergeSort(nums,s,mid);
-        mergeSort(nums,mid+1,e);
 
-        merge(nums,s,e,mid);
+        while (j <= ub) {
+            temp[k++] = nums[j++];
+        }
+
+        for (i = lb, k = 0; i <= ub; i++, k++) {
+            nums[i] = temp[k];
+        }
     }
     public int[] sortArray(int[] nums) {
       
