@@ -11,6 +11,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/Prince671/LeetCode_Question/tree/master/0121-best-time-to-buy-and-sell-stock) |
 | [0238-product-of-array-except-self](https://github.com/Prince671/LeetCode_Question/tree/master/0238-product-of-array-except-self) |
 | [0442-find-all-duplicates-in-an-array](https://github.com/Prince671/LeetCode_Question/tree/master/0442-find-all-duplicates-in-an-array) |
+| [0912-sort-an-array](https://github.com/Prince671/LeetCode_Question/tree/master/0912-sort-an-array) |
 | [1464-maximum-product-of-two-elements-in-an-array](https://github.com/Prince671/LeetCode_Question/tree/master/1464-maximum-product-of-two-elements-in-an-array) |
 | [1528-shuffle-string](https://github.com/Prince671/LeetCode_Question/tree/master/1528-shuffle-string) |
 | [1967-number-of-strings-that-appear-as-substrings-in-word](https://github.com/Prince671/LeetCode_Question/tree/master/1967-number-of-strings-that-appear-as-substrings-in-word) |
@@ -27,6 +28,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0004-median-of-two-sorted-arrays](https://github.com/Prince671/LeetCode_Question/tree/master/0004-median-of-two-sorted-arrays) |
 | [0053-maximum-subarray](https://github.com/Prince671/LeetCode_Question/tree/master/0053-maximum-subarray) |
 | [0148-sort-list](https://github.com/Prince671/LeetCode_Question/tree/master/0148-sort-list) |
+| [0912-sort-an-array](https://github.com/Prince671/LeetCode_Question/tree/master/0912-sort-an-array) |
 ## Math
 |  |
 | ------- |
@@ -82,11 +84,13 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0148-sort-list](https://github.com/Prince671/LeetCode_Question/tree/master/0148-sort-list) |
 | [0242-valid-anagram](https://github.com/Prince671/LeetCode_Question/tree/master/0242-valid-anagram) |
 | [0442-find-all-duplicates-in-an-array](https://github.com/Prince671/LeetCode_Question/tree/master/0442-find-all-duplicates-in-an-array) |
+| [0912-sort-an-array](https://github.com/Prince671/LeetCode_Question/tree/master/0912-sort-an-array) |
 | [1464-maximum-product-of-two-elements-in-an-array](https://github.com/Prince671/LeetCode_Question/tree/master/1464-maximum-product-of-two-elements-in-an-array) |
 | [3016-minimum-number-of-pushes-to-type-word-ii](https://github.com/Prince671/LeetCode_Question/tree/master/3016-minimum-number-of-pushes-to-type-word-ii) |
 ## Heap (Priority Queue)
 |  |
 | ------- |
+| [0912-sort-an-array](https://github.com/Prince671/LeetCode_Question/tree/master/0912-sort-an-array) |
 | [1464-maximum-product-of-two-elements-in-an-array](https://github.com/Prince671/LeetCode_Question/tree/master/1464-maximum-product-of-two-elements-in-an-array) |
 ## Hash Table
 |  |
@@ -117,4 +121,17 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0148-sort-list](https://github.com/Prince671/LeetCode_Question/tree/master/0148-sort-list) |
+| [0912-sort-an-array](https://github.com/Prince671/LeetCode_Question/tree/master/0912-sort-an-array) |
+## Bucket Sort
+|  |
+| ------- |
+| [0912-sort-an-array](https://github.com/Prince671/LeetCode_Question/tree/master/0912-sort-an-array) |
+## Radix Sort
+|  |
+| ------- |
+| [0912-sort-an-array](https://github.com/Prince671/LeetCode_Question/tree/master/0912-sort-an-array) |
+## Counting Sort
+|  |
+| ------- |
+| [0912-sort-an-array](https://github.com/Prince671/LeetCode_Question/tree/master/0912-sort-an-array) |
 <!---LeetCode Topics End-->
