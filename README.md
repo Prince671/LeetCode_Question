@@ -14,6 +14,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0238-product-of-array-except-self](https://github.com/Prince671/LeetCode_Question/tree/master/0238-product-of-array-except-self) |
 | [0442-find-all-duplicates-in-an-array](https://github.com/Prince671/LeetCode_Question/tree/master/0442-find-all-duplicates-in-an-array) |
 | [0448-find-all-numbers-disappeared-in-an-array](https://github.com/Prince671/LeetCode_Question/tree/master/0448-find-all-numbers-disappeared-in-an-array) |
+| [0877-stone-game](https://github.com/Prince671/LeetCode_Question/tree/master/0877-stone-game) |
 | [0912-sort-an-array](https://github.com/Prince671/LeetCode_Question/tree/master/0912-sort-an-array) |
 | [1464-maximum-product-of-two-elements-in-an-array](https://github.com/Prince671/LeetCode_Question/tree/master/1464-maximum-product-of-two-elements-in-an-array) |
 | [1528-shuffle-string](https://github.com/Prince671/LeetCode_Question/tree/master/1528-shuffle-string) |
@@ -38,6 +39,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0048-rotate-image](https://github.com/Prince671/LeetCode_Question/tree/master/0048-rotate-image) |
 | [0633-sum-of-square-numbers](https://github.com/Prince671/LeetCode_Question/tree/master/0633-sum-of-square-numbers) |
+| [0877-stone-game](https://github.com/Prince671/LeetCode_Question/tree/master/0877-stone-game) |
 | [3014-minimum-number-of-pushes-to-type-word-i](https://github.com/Prince671/LeetCode_Question/tree/master/3014-minimum-number-of-pushes-to-type-word-i) |
 ## Two Pointers
 |  |
@@ -82,6 +84,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0032-longest-valid-parentheses](https://github.com/Prince671/LeetCode_Question/tree/master/0032-longest-valid-parentheses) |
 | [0053-maximum-subarray](https://github.com/Prince671/LeetCode_Question/tree/master/0053-maximum-subarray) |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/Prince671/LeetCode_Question/tree/master/0121-best-time-to-buy-and-sell-stock) |
+| [0877-stone-game](https://github.com/Prince671/LeetCode_Question/tree/master/0877-stone-game) |
 ## Sorting
 |  |
 | ------- |
@@ -148,4 +151,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0215-kth-largest-element-in-an-array](https://github.com/Prince671/LeetCode_Question/tree/master/0215-kth-largest-element-in-an-array) |
+## Game Theory
+|  |
+| ------- |
+| [0877-stone-game](https://github.com/Prince671/LeetCode_Question/tree/master/0877-stone-game) |
 <!---LeetCode Topics End-->
