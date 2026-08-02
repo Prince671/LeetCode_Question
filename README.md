@@ -14,6 +14,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0238-product-of-array-except-self](https://github.com/Prince671/LeetCode_Question/tree/master/0238-product-of-array-except-self) |
 | [0442-find-all-duplicates-in-an-array](https://github.com/Prince671/LeetCode_Question/tree/master/0442-find-all-duplicates-in-an-array) |
 | [0448-find-all-numbers-disappeared-in-an-array](https://github.com/Prince671/LeetCode_Question/tree/master/0448-find-all-numbers-disappeared-in-an-array) |
+| [0485-max-consecutive-ones](https://github.com/Prince671/LeetCode_Question/tree/master/0485-max-consecutive-ones) |
 | [0877-stone-game](https://github.com/Prince671/LeetCode_Question/tree/master/0877-stone-game) |
 | [0912-sort-an-array](https://github.com/Prince671/LeetCode_Question/tree/master/0912-sort-an-array) |
 | [1464-maximum-product-of-two-elements-in-an-array](https://github.com/Prince671/LeetCode_Question/tree/master/1464-maximum-product-of-two-elements-in-an-array) |
