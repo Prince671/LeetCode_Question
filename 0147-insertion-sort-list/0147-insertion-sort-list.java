@@ -1,25 +1,22 @@
 class Solution {
     public ListNode insertionSortList(ListNode head) {
+        ListNode current=head;
+        while(current!=null){
+            ListNode minNode=current;
+            ListNode compare=current.next;
+            while(compare!=null){
+                if(compare.val<minNode.val){
+                    minNode=compare;
+                }
+                compare=compare.next;
+            }
+            int temp = current.val;
+            current.val = minNode.val;
+            minNode.val = temp;
 
-        List<Integer> a = new ArrayList<>();
-
-        ListNode current = head;
-
-        while (current != null) {
-            a.add(current.val);
-            current = current.next;
+            current=current.next;
         }
 
-        Collections.sort(a);
-
-        ListNode temp = head;
-        int i = 0;
-
-        while (temp != null) {
-            temp.val = a.get(i);
-            temp = temp.next;
-            i++;
-        }
 
         return head;
     }
