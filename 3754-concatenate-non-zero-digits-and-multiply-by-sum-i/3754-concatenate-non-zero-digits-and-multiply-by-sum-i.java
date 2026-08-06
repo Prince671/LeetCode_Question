@@ -3,21 +3,22 @@ class Solution {
         if(n==0){
             return n;
         }
-        String val=String.valueOf(n);
-        String sortedVal="";
-        for(int i=0; i<val.length(); i++){
-            char ch=val.charAt(i);
-            if(ch!='0'){
-                sortedVal+=ch;
-            }
+       long sortedVal=0;
+        long place=1;
+        long sumOfSorted=0;
+        while(n>0){
+          long digit=n%10;
+          
+          if(digit!=0){
+            sortedVal+=digit*place;
+            place*=10;
+            sumOfSorted+=digit;
+          }
+          n/=10;
         }
-        long result=Long.parseLong(sortedVal);
-        long reference=result;
-        long product=0;
-        while(result>0){
-            product+=result%10;
-            result/=10;
-        }
-        return reference*product;
+
+
+
+        return sortedVal* sumOfSorted; 
     }
 }
