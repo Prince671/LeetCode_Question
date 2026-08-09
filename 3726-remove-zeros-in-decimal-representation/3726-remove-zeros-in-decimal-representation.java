@@ -1,27 +1,19 @@
 class Solution {
     public long removeZeros(long n) {
-        if(n<9){
-            return n;
-        }
-        long val=n;
-        long sum=0;
-        while(val>0){
-            long digit=val%10;
-            System.out.print(digit+ " ");
-            if(digit!=0){
-                sum*=10;
-                sum+=digit;
+        long result = 0;
+        long place = 1;
+
+        while (n > 0) {
+            long digit = n % 10;
+
+            if (digit != 0) {
+                result += digit * place;
+                place *= 10;
             }
-            val/=10;
+
+            n /= 10;
         }
-        System.out.println(sum);
-        long ans=0;
-        while(sum>0){
-            long digit=sum%10;
-            
-            ans*=10;ans+=digit;
-            sum/=10;
-        }
-        return ans;
+
+        return result;
     }
 }
