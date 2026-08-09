@@ -1,43 +1,31 @@
 class Solution {
     public int[] findMissingAndRepeatedValues(int[][] grid) {
-        int n=grid.length;
-        int m=grid[0].length;
-        int mergeAdd[]=new int[n*m];
-        int k=0;
-        for(int i=0; i<n; i++){
-            for(int j=0; j<m; j++){
-                mergeAdd[k]=grid[i][j];
-                k++;
+
+        int n = grid.length;
+        int size = n * n;
+
+        int[] freq = new int[size + 1];
+
+        // Count frequency of every number
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < n; j++) {
+                freq[grid[i][j]]++;
             }
-            
         }
-        Arrays.sort(mergeAdd);
-        int ans[]=new int[2];
-        Set<Integer> st=new HashSet<>();
-        int j=0;
-        for(int i=0; i<mergeAdd.length; i++){
-            if(!st.contains(mergeAdd[i])){
-                st.add(mergeAdd[i]);
-            }else{
-                if(j<ans.length){
-                ans[j]=mergeAdd[i];
-                j++;}
+
+        int repeated = -1;
+        int missing = -1;
+
+        // Find repeated and missing numbers
+        for (int i = 1; i <= size; i++) {
+            if (freq[i] == 2) {
+                repeated = i;
+            } 
+            else if (freq[i] == 0) {
+                missing = i;
             }
-            
         }
-        boolean isFound=false;
-        for(int i=0; i<mergeAdd.length; i++){
-            isFound=false;
-            for(int x:mergeAdd){
-                if(x==i+1){
-                    isFound=true;
-                }
-                
-            }
-            if(!isFound){
-                    ans[j]=i+1;
-                }
-        }
-        return ans;
+
+        return new int[]{repeated, missing};
     }
 }
