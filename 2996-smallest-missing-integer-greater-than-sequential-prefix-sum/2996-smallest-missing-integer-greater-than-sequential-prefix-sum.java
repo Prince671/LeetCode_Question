@@ -1,25 +1,27 @@
 class Solution {
     public int missingInteger(int[] nums) {
-       int sum=nums[0];
-        for(int i=1; i<nums.length; i++){
-            if( nums[i]-1==nums[i-1]){
-                sum+=nums[i];
-            }else{
-                    break;
-                }
 
-        }
-        boolean isFound=true;
-        Arrays.sort(nums);
-        while(isFound){
-            for(int val:nums){
-                if(val==sum){
-                    sum++;
-                }
-                
+        int sum = nums[0];
+
+        // Find the sum of the longest consecutive prefix
+        for (int i = 1; i < nums.length; i++) {
+            if (nums[i] == nums[i - 1] + 1) {
+                sum += nums[i];
+            } else {
+                break;
             }
-            isFound=false;
         }
+
+        Set<Integer> set = new HashSet<>();
+
+        for (int val : nums) {
+            set.add(val);
+        }
+
+        while (set.contains(sum)) {
+            sum++;
+        }
+
         return sum;
     }
 }
