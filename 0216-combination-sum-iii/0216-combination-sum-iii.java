@@ -9,8 +9,8 @@ class Solution {
             List<Integer> combination) {
 
         // Exactly k numbers selected and target reached
-        if (k == 0) {
-            if (n == 0) {
+        if (n == 0) {
+            if (combination.size() == k) {
                 ans.add(new ArrayList<>(combination));
             }
             return;
@@ -26,7 +26,7 @@ class Solution {
         getCombination(
             arr,
             index + 1,
-            k - 1,
+            k,
             n - arr[index],
             ans,
             combination
