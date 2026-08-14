@@ -1,10 +1,13 @@
 class Solution {
     public int missingMultiple(int[] nums, int k) {
-        int val=k;
-        Set<Integer> withOutDuplicate = new HashSet<>(Arrays.stream(nums).boxed().toList());
+        Set<Integer> set = new HashSet<>();
 
-        while(withOutDuplicate.contains(k)){
-            k += val ;
+        for (int val : nums) {
+            set.add(val);
+        }
+        int value=k;
+        while (set.contains(k)) {
+            k += value;
         }
 
         return k;
