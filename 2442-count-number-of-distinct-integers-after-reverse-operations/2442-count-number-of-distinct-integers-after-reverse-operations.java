@@ -8,10 +8,12 @@ class Solution {
             set.add(num);
 
             int reversed = 0;
+            int temp = num;
 
-            while (num > 0) {
-                reversed = reversed * 10 + num % 10;
-                num /= 10;
+            while (temp > 0) {
+                int digit=temp%10;
+                reversed = reversed * 10 + digit;
+                temp /= 10;
             }
 
             set.add(reversed);
