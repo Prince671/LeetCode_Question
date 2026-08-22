@@ -14,10 +14,12 @@ public class Solution {
     public ListNode getIntersectionNode(ListNode headA, ListNode headB) {
         ListNode a=headA;
         ListNode b=headB;
+        //calculating the Length of Both the List
         while(a!=null && b!=null){
             a=a.next;
             b=b.next;
         }
+        //calculating the extra length of the linkedlist and making it Same length , Both the linked list
         if(a!=null){
             int aExtraLen=0;
             while(a!=null){
