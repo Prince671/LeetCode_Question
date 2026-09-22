@@ -14,35 +14,45 @@ import java.math.BigInteger;
  */
 
 class Solution {
+    public static ListNode reverse(ListNode head){
+        ListNode prev=null;
+        ListNode curr=head;
+        while(curr!=null){
+            ListNode forward=curr.next;
+            curr.next=prev;
+            prev=curr;
+            curr=forward;
+        }
+        return prev;
+    }
     public ListNode doubleIt(ListNode head) {
 
-        StringBuilder values = new StringBuilder();
+        // Step 1. Reverse a LL
+        head=reverse(head);
+        //step 2 . Double its Value
+        ListNode temp=head;
+        ListNode ansTail=temp;
+        int carry=0;
+        while(temp!=null){
+            int value=temp.val;
+            int sum=value+value+carry;
+            int digit=sum%10;
+            temp.val=digit;
 
-        ListNode temp = head;
-
-        while(temp != null) {
-            values.append(temp.val);
-            temp = temp.next;
+            carry=sum/10;
+            ansTail=temp;
+            temp=temp.next;
         }
 
-        // Fix: convert StringBuilder to BigInteger and multiply by 2
-        BigInteger value = new BigInteger(values.toString());
-        String result = value.multiply(BigInteger.valueOf(2)).toString();
-
-        ListNode dummy = new ListNode(0);
-        ListNode current = dummy;
-
-        for(int i = 0; i < result.length(); i++) {
-
-            char ch = result.charAt(i);
-
-            ListNode newNode =
-                new ListNode(Integer.parseInt(String.valueOf(ch)));
-
-            current.next = newNode;
-            current = current.next;
+        if(temp==null && carry>0){
+            ansTail.next=new ListNode(carry);
         }
 
-        return dummy.next;
+        // step 3 -> Reverse the LL Again
+
+        head=reverse(head);
+
+        return head;
+
     }
 }
