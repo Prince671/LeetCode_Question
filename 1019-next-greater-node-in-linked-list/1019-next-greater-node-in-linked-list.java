@@ -20,31 +20,21 @@ class Solution {
         }
 
         int[] ans = new int[length];
-        int i = 0;
-
-        ListNode iterateNode = head;
-
-        while (iterateNode != null) {
-
-            int val = iterateNode.val;
-            ListNode getVal = iterateNode.next;
-
-            while (getVal != null) {
-
-                int val2 = getVal.val;
-
-                if (val2 > val) {
-                    ans[i] = val2;
+        int index=0;
+        ListNode temp=head;
+        while(temp!=null){
+            int val=temp.val;
+            for(ListNode temp1=temp.next; temp1!=null; temp1=temp1.next){
+                int val1=temp1.val;
+                if(val1>val){
+                    ans[index]=val1;
                     break;
+
                 }
-
-                getVal = getVal.next;
             }
-
-            i++;
-            iterateNode = iterateNode.next;
+            temp=temp.next;
+            index++;
         }
-
         return ans;
     }
 }
