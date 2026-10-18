@@ -20,20 +20,19 @@ class Solution {
         }
 
         int[] ans = new int[length];
-        int index=0;
+        Deque<int[]> st=new ArrayDeque<>();
         ListNode temp=head;
+        int index=0;
         while(temp!=null){
             int val=temp.val;
-            for(ListNode temp1=temp.next; temp1!=null; temp1=temp1.next){
-                int val1=temp1.val;
-                if(val1>val){
-                    ans[index]=val1;
-                    break;
-
-                }
+            while(!st.isEmpty() && val>st.peek()[0] ){
+                int index1=st.peek()[1];
+                int result=st.pop()[0];
+                ans[index1]=val;
             }
-            temp=temp.next;
+            st.push(new int[]{val, index});
             index++;
+            temp=temp.next;
         }
         return ans;
     }
