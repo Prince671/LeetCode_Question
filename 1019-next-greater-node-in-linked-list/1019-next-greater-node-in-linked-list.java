@@ -3,34 +3,23 @@ import java.util.*;
 
 class Solution {
     public int[] nextLargerNodes(ListNode head) {
-
-        int length = 0;
-        ListNode findLength = head;
-
-        while (findLength != null) {
-            length++;
-            findLength = findLength.next;
+        List<Integer> list=new ArrayList<>();
+        ListNode temp=head;
+        while(temp!=null){
+            list.add(temp.val);
+            temp=temp.next;
         }
+        int n=list.size();
+        int[] ans=new int[n];
+        Deque<Integer> st=new ArrayDeque<>();
 
-        int[] ans = new int[length];
-        Deque<int[]> st = new ArrayDeque<>();
-
-        ListNode temp = head;
-        int index = 0;
-
-        while (temp != null) {
-            int val = temp.val;
-
-            while (!st.isEmpty() && val > st.peek()[0]) {
-                int index1 = st.pop()[1];
-                ans[index1] = val;
+        for(int i=0; i<n; i++){
+            while(!st.isEmpty() && list.get(i)> list.get(st.peek())){
+                int previousValueIndex=st.pop();
+                ans[previousValueIndex]=list.get(i);
             }
-
-            st.push(new int[]{val, index});
-            index++;
-            temp = temp.next;
+            st.push(i);
         }
-
         return ans;
     }
 }
