@@ -1,28 +1,32 @@
 class Solution {
-    static int solve(int row, int col, int m, int n, int[][] dp){
-        if(row==m-1 || col==n-1){
+    static int getUniquePath(int arr[][], int i, int j, int dp[][]){
+        int m=arr.length;
+        int n=arr[0].length;
+        
+        if(i==m-1 && j==n-1){
             return 1;
         }
-        if(row>=m || col>=n){
+        if(i>=m || j>=n){
             return 0;
         }
-        if(dp[row][col]!=-1){
-            return dp[row][col];
+        if(dp[i][j]!=-1){
+            return dp[i][j];
         }
-        int down=solve(row+1, col, m, n, dp);
-        int right=solve(row, col+1, m, n, dp);
-        dp[row][col]=right+down;
-        return dp[row][col];
+        int down=getUniquePath(arr, i+1, j, dp);
+        int right=getUniquePath(arr, i, j+1, dp);
+
+        int finalAns=down+right;
+        dp[i][j]=finalAns;
+        return finalAns;
     }
     public int uniquePaths(int m, int n) {
-        int col=0;
-        int row=0;
-        int[][] dp=new int[m][n];
-         for (int i = 0; i < m; i++) {
-            Arrays.fill(dp[i], -1);
+        int dp[][]=new int[m][n];
+        for(int i=0; i<dp.length; i++){
+            Arrays.fill(dp[i],-1);
         }
+        int arr[][]=new int[m][n];
+        return getUniquePath(arr, 0, 0, dp);
 
-
-        return solve(row, col, m, n, dp);
+        
     }
 }
